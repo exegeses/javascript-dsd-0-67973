@@ -16,6 +16,7 @@ body{
 }
 h1{
     font-weight: 300;
+    margin-bottom: 24px;
 }
 #txt{
     font-size: 1.5rem;
@@ -30,3 +31,23 @@ nav{
         padding: 12px 32px;
         font-size: 20px;
     }
+    nav button{
+        background-color: #3a716b;
+        color: hsl(145, 49%, 82%);
+        border: none;
+        border-radius: 8px;
+        padding: 8px 48px;
+        margin: 0px 8px;
+        cursor: pointer;
+    }
+    nav button:hover{
+        background-color: #4e9993;
+        box-shadow: 0px 0px 12px #4e9993;
+    }
+#caja{
+    background-color: #b2b2b2;
+    width: 256px;
+    height: 256px;
+    border-radius: 12px;
+    margin: 24px;
+}
