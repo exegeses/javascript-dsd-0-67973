@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #191f1a;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fondo{
+    width: 1400px;
+    height: 600px;
+    background-image: url(../imgs/bg.jpg);
+    background-position: 0 -600px;
+}
+    img[alt="phantom"]{
+        position: relative;
+        top: 330px;
+        transform: translateX(450px);
+    }
