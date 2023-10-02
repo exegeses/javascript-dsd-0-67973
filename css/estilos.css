@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap');
 
+:root{
+    --fondo: #273735;
+    --fondo2: #335247;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -68,3 +72,57 @@ nav{
     #contenedor img{
         cursor: pointer;
     }
+
+#lista li{
+    /* list-style-image: url("../clase9/imgs/ice-cream.png"); */
+    list-style-type: none;
+    margin: 8px 0px;
+    background-color: var(--fondo2 );
+    padding-bottom: 12px;
+    transition: 500ms;
+    cursor: pointer;
+
+    &::before{
+         content: url("../clase9/imgs/ice-cream.png");
+         position: relative;
+         top: 8px;
+         left: -16px
+    }
+
+    &:hover{
+         font-size: 24px;
+    }
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+
+    & div input{
+        width: 100%;
+          background-color: rgba(255, 255, 255, 0.25);
+          padding: 8px;
+          border-radius: 8px;
+          margin: 24px 0px;
+         color: #fff;
+          font-size: 24px;
+    }
+
+    & div button{
+        background-color: #3a716b;
+        color: hsl(145, 49%, 82%);
+        border: none;
+        border-radius: 8px;
+        padding: 8px 48px;
+        margin: 0px 8px;
+        cursor: pointer;
+    }
+    & div  button:hover{
+        background-color: #4e9993;
+        box-shadow: 0px 0px 12px #4e9993;
+    }
+}
+
+
+
